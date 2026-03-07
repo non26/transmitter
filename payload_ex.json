@@ -1,0 +1,9 @@
+{
+    "service_name": "bot",
+    "service_id": "b1",
+    "request": {
+        "field1": "1",
+        "field2": "2",
+        "field3": "3"
+    }
+}

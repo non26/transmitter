@@ -38,6 +38,9 @@ func init() {
 
 	// 3. Define the Route
 	r.POST("/push", pushHandler.HandlePush)
+	r.GET("/health", func(c *gin.Context) {
+		c.JSON(200, gin.H{"message": "ok"})
+	})
 
 	// 4. Wrap Gin with the Lambda Adapter
 	ginLambda = ginadapter.New(r)
